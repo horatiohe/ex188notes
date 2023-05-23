@@ -29,4 +29,16 @@ That being said, `podman exec <CONTAINER_NAME> ss -pant` will also return error.
 
 There is no multi-stage Containerfile, but know the difference between ENV and ARG and how to use ARGs at build time. Also know that ARGs can be passed as variable in build time by executing:
 `podman build -t <IMAGE_NAME:TAG> --build-arg <ARG_KEY:VALUE>`
+  
+## Tips fresh from oven:
+1. just study till chapter 6, skip the rest
+2. learn pass in --build-arg in build time
+3. learn pass in --env in run time
+4. learn to use podman generate kube <container_name> to print kube yaml for debugging purpose
+5. validate the solution as much as you can
+6. sreen resolution MUST BE 1920x1080, any other solutions will be trimmed or can't display full screen (i was almost killed by shrinked down resolution and size)
+7. as long as you can create a good container with
+  `podman run -d --rm --name <container_name> -p 8080:8080 --network <netowrk> -v <volume>:/<container_folder> --env <varabile_name>=<value> registry_image`
+  you can already pass the exam. 
+  and GOOD LUCK!!!
 
